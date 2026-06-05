@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+	background-color: #ffffff;
+	color: #1b1b1b;
+}
+
+.site-header {
+	padding: 1rem 1.25rem;
+	background-color: #ffffff;
+}
+
+.site-header-inner {
+	max-width: 72rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.brand {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	line-height: 0;
+}
+
+.brand img {
+	display: block;
+	width: auto;
+	max-width: 22rem;
+	height: auto;
+}
+
+.main-nav-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3.75rem;
+	flex-wrap: wrap;
+}
+
+.main-nav-list a {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus-visible {
+	background-color: #B6B8BA;
+}
+
+.hero-banner {
+	position: relative;
+	width: 100%;
+	min-height: 30vw;
+	background-image: url("assets/Bildwelt/PageBilder/Homepage_Hausschlüssel.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+    font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.hero-banner-text {
+	position: absolute;
+	left: 20%;
+	top: 72%;
+	transform: translateY(-50%);
+	padding: 0.25rem 0.5rem;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 0.95;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+
+.hero-banner-bubble {
+	position: absolute;
+	right: 22%;
+	top: 72%;
+	transform: translateY(-50%);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: #F29F28;
+    padding: 2rem;
+	color: #ffffff;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	line-height: 0.92;
+	text-transform: uppercase;
+}
+
+@media (max-width: 40rem) {
+	.site-header {
+		padding: 0.75rem 1rem;
+	}
+
+	.brand img {
+		max-width: 18rem;
+	}
+
+	.main-nav {
+		margin-top: 0.85rem;
+	}
+
+	.main-nav-list {
+		gap: 1rem;
+	}
+
+	.hero-banner {
+		min-height: 13rem;
+		background-position: 60% center;
+	}
+
+	.hero-banner-text {
+		left: 0.8rem;
+		top: 61%;
+		font-size: clamp(0.85rem, 4.4vw, 1.15rem);
+	}
+
+	.hero-banner-bubble {
+		right: 0.75rem;
+		top: 60%;
+		width: clamp(4.7rem, 24vw, 6.2rem);
+		font-size: clamp(0.78rem, 3.6vw, 1rem);
+	}
+}
