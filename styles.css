@@ -147,11 +147,11 @@ body {
 	margin-bottom: 24px;
 }
 
-.footer {
+.site-footer {
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
 	margin-top: 80px;
 	border-top: 6px solid #A5DAEC;
-	height: 264px;
+	height: 184px;
 }
 
 .footer-buttons {
