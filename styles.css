@@ -1,37 +1,26 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
 	margin: 0;
-	font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
 	background-color: #ffffff;
 	color: #1b1b1b;
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
 }
 
 .site-header {
-	padding: 1rem 1.25rem;
 	background-color: #ffffff;
-}
-
-.site-header-inner {
-	max-width: 72rem;
-	margin: 0 auto;
-	text-align: center;
+	height: fit-content;
 }
 
 .brand {
 	display: block;
 	width: fit-content;
 	margin: 0 auto;
-	line-height: 0;
 }
 
 .brand img {
 	display: block;
-	width: auto;
-	max-width: 22rem;
-	height: auto;
+	width: 392px;
+	height: 108px;
+	padding-top: 24px;
 }
 
 .main-nav-list {
@@ -41,18 +30,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 3.75rem;
 	flex-wrap: wrap;
+	gap: 64px;
+	padding-bottom: 16px;
 }
 
 .main-nav-list a {
 	display: inline-block;
 	color: #000000;
 	text-decoration: none;
-	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-	font-weight: 600;
+	font-weight: semi-bold;
 	font-size: 20px;
-	line-height: 1.2;
 }
 
 .main-nav-list a:hover,
@@ -63,48 +51,165 @@ body {
 .hero-banner {
 	position: relative;
 	width: 100%;
-	min-height: 30vw;
+	height: 528px;
 	background-image: url("assets/Bildwelt/PageBilder/Homepage_Hausschlüssel.png");
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
-    font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-    font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+}
+
+.hero-banner-content {
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+    font-weight: 900;
     font-size: 60px;
+
+	width: 1120px;
+	height: 230px;
+	
+	margin-top: 250px;
+	display: flex;
+	align-items: center;
+
+	color: #ffffff;
 }
 
-.hero-banner-text {
-	position: absolute;
-	left: 20%;
-	top: 72%;
-	transform: translateY(-50%);
-	padding: 0.25rem 0.5rem;
+.hero-banner-content-text {
 	background-color: #000000;
-	color: #ffffff;
-	line-height: 0.95;
-	letter-spacing: 0.01em;
-	text-transform: uppercase;
+	font-weight: 700;
+	font-style: black;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: 0%;
+	font-variant: small-caps;
 }
 
-.hero-banner-bubble {
-	position: absolute;
-	right: 22%;
-	top: 72%;
-	transform: translateY(-50%);
-	aspect-ratio: 1;
-	border-radius: 50%;
+.hero-banner-content-bubble {
 	background-color: #F29F28;
-    padding: 2rem;
-	color: #ffffff;
-	display: grid;
-	place-items: center;
+	font-weight: 900;
+	font-style: Black;
+	font-size: 60px;
+	line-height: 45px;
+	letter-spacing: 0%;
 	text-align: center;
-	line-height: 0.92;
-	text-transform: uppercase;
+	font-variant: small-caps;
+
+
+	width: 230px;
+	height: 100%;
+
+	margin-left: auto;
+	margin-right: 0px;
+
+	border-radius: 100%;
+
+	text-align: center;
+	align-content: center;
 }
 
-@media (max-width: 40rem) {
+.content {
+	width: min(1200px, 90%);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content p {
+	padding-top: 0px;
+	padding-bottom: 24px;
+	margin: 0;
+
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 100%;
+}
+
+.content h1 {
+	font-weight: 700;
+	font-size: 64px;
+	font-variant: small-caps;
+}
+
+.content h2 {
+	font-weight: 700;
+	font-size: 32px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.content h3 {
+	font-weight: 700;
+	font-size: 25px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.footer {
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	margin-top: 80px;
+	border-top: 6px solid #A5DAEC;
+	height: 264px;
+}
+
+.footer-buttons {
+	display: flex;
+	margin-top: 48px;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	gap: 36px;
+}
+
+.footer-buttons button {
+	height: 48px;
+	border-radius: 16px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-left: 36px;
+	padding-right: 36px;
+
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
+}
+
+/* @TODO: check if the colors are correct */
+.footer-buttons button:hover {
+  filter: brightness(90%); 
+}
+
+.footer-nav-list {
+	margin-top: 36px;
+	margin-bottom: 36px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 24px;
+
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	color: #666666;
+}
+
+.footer-nav-list a {
+	text-decoration: none;
+	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	color: #666666;
+}
+
+/* @media (max-width: 40rem) {
 	.site-header {
 		padding: 0.75rem 1rem;
 	}
@@ -138,4 +243,4 @@ body {
 		width: clamp(4.7rem, 24vw, 6.2rem);
 		font-size: clamp(0.78rem, 3.6vw, 1rem);
 	}
-}
+} */

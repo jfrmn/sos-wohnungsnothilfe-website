@@ -5,27 +5,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>SOS Wohnungslosenhilfe e.V.</title>
 	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="site-header">
-		<div class="site-header-inner">
-			<a class="brand" href="index.html" aria-label="Startseite">
-				<img src="assets/Logos/Wort_Bildmarke.png" alt="SOS Wohnungslosenhilfe e.V." />
-			</a>
-			<nav class="main-nav" aria-label="Hauptnavigation">
-				<ul class="main-nav-list">
-					<li><a href="#">Wohnungslosigkeit</a></li>
-					<li><a href="#">Verein</a></li>
-					<li><a href="#">Spenden</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Kontakt</a></li>
-				</ul>
-			</nav>
-		</div>
+		<a class="brand" href="index.html" aria-label="Startseite">
+			<img src="assets/Logos/Wort_Bildmarke.png" alt="SOS Wohnungslosenhilfe e.V." />
+		</a>
+		<nav class="main-nav" aria-label="Hauptnavigation">
+			<ul class="main-nav-list">
+				<li><a href="#">Wohnungslosigkeit</a></li>
+				<li><a href="#">Verein</a></li>
+				<li><a href="#">Spenden</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</nav>
 	</header>
 	<section class="hero-banner" aria-label="Spendenaufruf">
-		<div class="hero-banner-text">GEMEINSAM FÜR<br />NEUE PERSPEKTIVEN</div>
-		<div class="hero-banner-bubble">DEINE<br />SPENDE<br />ZÄHLT!</div>
+		<div class="hero-banner-content">
+
+			<div class="hero-banner-content-text">GEMEINSAM FÜR<br />NEUE PERSPEKTIVEN</div>
+			<div class="hero-banner-content-bubble">DEINE<br />SPENDE<br />ZÄHLT!</div>
+		</div>
+	</section>
+	<section class="content">
+		<h2>SOS Wohnungslosenhilfe e.V.</h2>
+		<p>
+			Wohnungslose Menschen geraten in eine Krise, in der nichts mehr geht. Ohne Wohnung keine Adresse, ohne Adresse kein Arbeitsvertrag, kein Bankkonto, keine Chance auf einen neuen Mietvertrag. Und Geldbörse und Dokumente sind anfällig für Diebstahl und Verlust. Oft ist die einzige Hoffnung der Antrag auf Sozialleistungen. Doch man braucht bereits etwas Geld, um überhaupt Leistungen beantragen zu können. Das Sozialamt hilft den Menschen, auch mit Bereitstellung einer Unterkunft, kann jedoch nicht alle Kosten übernehmen. Der Verein „SOS Wohnungslosenhilfe e.V.“ wird daher ergänzend überbrückend in Notlagen tätig und unterstützt die Teilhabe wohnungsloser Menschen am gesellschaftlichen Leben.
+		</p>
+		<!-- crop is specific to this image so we use inline styles here -->
+		<img src="assets/Bildwelt/Team/Gruppenbild.jpeg" alt="Gruppenbild des Teams"
+			style="width: 100%; height: auto; margin-top: -335px; clip-path: rect(335px auto auto auto);" />
+		<h3>Gemeinsam wachsen</h3>
+		<p>
+			Um noch mehr Menschen helfen zu können, möchten wir unseren Verein weiter ausbauen.<br>
+			Dafür sind wir auf Unterstützung angewiesen - jede Hilfe zählt. Ob durch Engagement oder Spenden: Wir freuen uns über jede Form der Unterstützung.
+		</p>
+	</section>
+	<section class="footer">
+		<div class="footer-buttons">
+			<button class="footer-button" style="background-color: #F29F28; color: #ffffff; border: none;">Jetzt spenden</button>
+			<button class="footer-button" style="background-color: #ffffff; color: #22A9AB; border: 2px solid; border-color: #22A9AB;">Kontakt</button>
+		</div>
+		<nav class="footer-nav" aria-label="Footer Navigation">
+			<ul class="footer-nav-list">
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Datenschutz</a></li>
+				<li>© SOS Wohnungslosenhilfe e.V.</li>
+			</ul>
+		</nav>
 	</section>
 </body>
 </html>
