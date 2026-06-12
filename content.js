@@ -25,10 +25,20 @@ async function setupSite() {
 			heroBannerContentHtml: "UM UNBÜROKRATISCH UND<br>UNKOMPLIZIERT HELFEN ZU KÖNNEN",
 			contentPage: "pages/verein.html"
 		};
+	} else if (page === "spenden") {
+		// @TODO
+
+	} else if (page === "faq") {
+		pageSpecifics = {
+			heroBannerBackground: "assets/Bildwelt/Sonstiges/Foto%20Moin.jpg",
+			heroBannerContentHtml: "JEDE FRAGE IST EIN<br>SCHRITT RICHTING HILFE",
+			contentPage: "pages/faq.html"
+		};
 	}
 
 	const heroBanner = document.querySelector(".hero-banner");
 	heroBanner.style.backgroundImage = `url(${pageSpecifics.heroBannerBackground})`;
+	console.log("Hero Banner Background:", pageSpecifics.heroBannerBackground);
 	
 	const heroBannerContent = document.querySelector(".hero-banner-content-text");
 	heroBannerContent.innerHTML = pageSpecifics.heroBannerContentHtml;

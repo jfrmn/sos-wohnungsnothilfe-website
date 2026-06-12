@@ -1,0 +1,83 @@
+<style>
+	/* Enable animating to/from intrinsic sizes like height: auto */
+	.faq-item {
+		interpolate-size: allow-keywords;
+	}
+
+	.faq-item summary {
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+
+		font-weight: 700;
+		font-size: 25px;
+
+		border-bottom: 2px solid #22A9AB;
+		padding-bottom: 36px;
+		padding-top: 36px;
+	}
+
+	.faq-item[open] summary {
+		border-bottom: 0;
+		padding-bottom: 24px;
+	}
+
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-item summary::after {
+		content: "+";
+
+	}
+
+	.faq-item[open] summary::after {
+		content: "-";
+	}
+
+	.faq-item::details-content {
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition:
+			height 1s ease,
+			opacity 1s ease,
+			content-visibility 1s allow-discrete;
+	}
+
+	.faq-item[open]::details-content {
+		height: auto;
+		opacity: 1;
+	}
+
+	.faq-item p {
+		border: 2px solid #22A9AB;
+
+		font-weight: 400;
+		font-size: 18px;
+		color: #666666;
+
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+</style>
+<h1>FAQ</h1>
+<details class="faq-item">
+	<summary>1. Wie arbeitet der Verein?</summary>
+	<p>Die Vereinsmitglieder arbeiten ehrenamtlich, alle Spenden kommen wohnungslosen Menschen zugute.</p>
+</details>
+<details class="faq-item">
+	<summary>2. Wer wird durch den Verein unterstützt?</summary>
+	<p>Der Verein arbeitet regional und unterstützt insbesondere wohnungslose Menschen vor Ort.</p>
+</details>
+<details class="faq-item">
+	<summary>3. Wie wird meine Spende verwendet?</summary>
+	<p>Ein großer Teil der Spenden wird für Lebensmittel und Kosten für die Wiederbeschaffung von Dokumenten sowie für Fahrkarten verwendet. Außerdem werden Projekte zur gesellschaftlichen Teilhabe wohnungsloser Menschen finanziert.</p>
+</details>
+<details class="faq-item">
+	<summary>4. Kann ich meine Spende von der Steuer absetzen?</summary>
+	<p>Ja, der Verein ist vom Finanzamt als gemeinnützig anerkannt, Spendenquittungen werden Ihnen gern ausgestellt. Bitte teilen Sie uns dazu das Datum Ihrer Spende und Ihre Kontaktdaten mit.</p>
+</details>
