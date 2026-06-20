@@ -19,39 +19,38 @@
 	}
 
 	.team-grid-item-info {
-		visibility: hidden;
-		opacity: 0;
 		display: flex;
 		flex-direction: column;
 		margin-left: 24px;
-		transform: translateY(8px);
-		transition: opacity 220ms ease, transform 220ms ease, visibility 0ms linear 220ms;
 	}
 
 	/* @TODO use css variables */
-	.team-grid-item-info-name {
+	.team-grid-item-info h1 {
 		font-weight: 700;
 		font-size: 18px;
-		padding-bottom: 8px;
+		margin: 0 0 8px 0;
 	}
 
-	.team-grid-item-info-role {
+	.team-grid-item-info h2 {
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 18px;
+		margin: 0;
 	}
 
-	.team-grid-item:hover .team-grid-item-info,
-	.team-grid-item:focus-within .team-grid-item-info {
-		visibility: visible;
+	.team-grid-item-info p {
+		margin-bottom: 0;
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		margin-top: 0px;
+		transition: opacity 400ms ease, max-height 400ms ease, margin-top 400ms ease;
+	}
+
+	.team-grid-item:hover .team-grid-item-info p {
 		opacity: 1;
-		transform: translateY(0);
-		transition-delay: 0ms;
+		max-height: 350px;
+		margin-top: 12px;
 	}
-
-	/* .team-grid-photo {
-		display: block;
-		width: 100%;
-	} */
 
 	@media (max-width: 48rem) {
 		.team-grid {
@@ -80,43 +79,85 @@
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Birgit Grahl.jpg" alt="Porträt von Birgit Grahl" />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Birgit Grahl</span>
-			<span class="team-grid-item-info-role">Vorstandsvorsitzende</span>
+			<h1>Birgit Grahl</h1>
+			<h2>Vorstandsvorsitzende</h2>
+			<p>
+				Mich beeindrucken die Lebensklugheit und Solidarität wohnungsloser Menschen. Viele von ihnen
+				haben beruflich einen guten Stand gehabt und sind durch abenteuerliche, verrückte und oft auch
+				schlimme Erlebnisse in die Wohnungslosigkeit gerutscht. Ich wüsste nicht, wie ich monatelang ohne
+				Geld und Obdach auf der Straße überleben sollte, aber diese Menschen haben das geschafft. Oft wird
+				das Letzte noch geteilt. Mein Wunsch ist, dass irgendwann einige Lebensgeschichten der Menschen,
+				die wir betreuen, aufgeschrieben und in einem Buch veröffentlicht werden.
+			</p>
 		</div>
 	</div>
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Marlene Neumann.jpg" alt="Porträt von Marlene Neumann" />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Marlene Neumann</span>
-			<span class="team-grid-item-info-role">Stellvertretende Vorstandsvorsitzende</span>
+			<h1>Marlene Neumann</h1>
+			<h2>Stellvertretende Vorstandsvorsitzende</h2>
+			<p>
+				Unser Verein bietet Menschen eine Verschnaufpause vom Kampf gegen die Windmühlen des Lebens
+				auf der Straße. Ich bin stolz ein Teil davon zu sein!
+				Ingo Schröder (Vorstandsmitglied)
+				Ich bin froh, dass es mir gutgeht. Jeder Mensch sollte das Recht auf eine Wohnung und das Nötigste
+				zum Leben haben. Über die Mitarbeit in unserem Verein möchte ich Menschen unterstützen, wieder
+				einen Platz in der Gesellschaft zu finden.
+			</p>
 		</div>
 	</div>
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Foto Henriette R..jpg" alt="Porträt von Henriette R." />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Henriette R.</span>
-			<span class="team-grid-item-info-role">Praktikantin</span>
+			<h1>Henriette R.</h1>
+			<h2>Praktikantin</h2>
+			<p>
+				Im Rahmen meines Studiums der Sozialen Arbeit absolvierte ich 2025 ein Praktikum im ÜWH Florastraße. Dort erlebte ich, wie häufig es an kleinen
+				Geldbeträgen oder Lebensmitteln fehlt und wie aufwendig deren Beschaffung bürokratisch ist. Die Idee, solche Mittel über einen Verein
+				unkompliziert zu sammeln und schnelle Hilfe zu ermöglichen, hat mich daher sofort überzeugt. Umso mehr freue ich mich, auch nach meinem
+				Praktikum über den Verein mit dem ÜWH verbunden zu bleiben.
+			</p>
 		</div>
 	</div>
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Ingo Schröder.jpg" alt="Porträt von Ingo Schröder" />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Ingo Schröder</span>
-			<span class="team-grid-item-info-role">Vorstandsmitglied</span>
+			<h1>Ingo Schröder</h1>
+			<h2>Vorstandsmitglied</h2>
+			<p>
+				Ich bin froh, dass es mir gutgeht. Jeder Mensch sollte das Recht auf eine Wohnung und das Nötigste
+				zum Leben haben. Über die Mitarbeit in unserem Verein möchte ich Menschen unterstützen, wieder
+				einen Platz in der Gesellschaft zu finden.
+			</p>
 		</div>
 	</div>
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Thomas Leschke.jpg" alt="Porträt von Thomas Leschke" />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Thomas Leschke</span>
-			<span class="team-grid-item-info-role">Vereinsmitglied</span>
+			<h1>Thomas Leschke</h1>
+			<h2>Vereinsmitglied</h2>
+			<p>
+				Als Heimleiter des Wohnungslosenheims und der Notschlafstätte erlebe ich täglich die Not der
+				Menschen, die ihre Wohnung verloren haben. Über den Verein ist es möglich geworden, mit kleinen
+				zusätzlichen Hilfen viel zu bewirken. Ich freue mich, wenn ich sehe, wie Menschen wieder Hoffnung
+				schöpfen und den nächsten Schritt gehen können. Egal wie weit der Weg ist, jeder Schritt zählt.
+				Besonders schön ist es zu erleben, wenn Bewohner, die lange im Heim gelebt haben, wieder eine
+				eigene Wohnung beziehen können.
+			</p>
 		</div>
 	</div>
 	<div class="team-grid-item">
 		<img class="team-grid-item-photo" src="assets/Bildwelt/Team/Sabine Wohlauf.jpg" alt="Porträt von Sabine Wohlauf" />
 		<div class="team-grid-item-info">
-			<span class="team-grid-item-info-name">Sabine Wohlauf</span>
-			<span class="team-grid-item-info-role">Vereinsmitglied</span>
+			<h1>Sabine Wohlauf</h1>
+			<h2>Vereinsmitglied</h2>
+			<p>
+				Jeder Mensch hat das Recht auf Würde, Sicherheit und Unterstützung. Das Schicksal wohnungsloser
+				Menschen lässt mich nicht kalt. Immer wieder sehe ich, wie schnell jemand in eine Notlage geraten
+				kann, und wie wenig es manchmal braucht, um zu helfen. Durch meine Mitarbeit im Verein möchte
+				ich Menschen unterstützen, die gerade keinen festen Halt im Leben haben. Ich wünsche mir, dass in
+				unserer Gesellschaft niemand vergessen wird.
+			</p>
 		</div>
 	</div>
 </div>
