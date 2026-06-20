@@ -34,6 +34,13 @@ async function setupSite() {
 			heroBannerContentHtml: "JEDE FRAGE IST EIN<br>SCHRITT RICHTING HILFE",
 			contentPage: "pages/faq.html"
 		};
+	
+	} else if (page === "kontakt") {
+		pageSpecifics = {
+			heroBannerBackground: "assets/Bildwelt/PageBilder/Gemini_Generated_Image_n0ohyan0ohyan0oh.png",
+			heroBannerContentHtml: "HILFE,<br>DIE ANKOMMT",
+			contentPage: "pages/kontakt.html"
+		};
 	}
 
 	const heroBanner = document.querySelector(".hero-banner");
