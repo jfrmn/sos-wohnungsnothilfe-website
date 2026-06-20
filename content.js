@@ -13,20 +13,27 @@ async function setupSite() {
 			heroBannerContentHtml: "GEMEINSAM FÜR<br>NEUE PERSPEKTIVEN",
 			contentPage: "pages/home.html"
 		};
+	
 	} else if (page === "wohnungslosigkeit") {
 		pageSpecifics = {
 			heroBannerBackground: "assets/Bildwelt/PageBilder/dimi-katsavaris-N3m2hKNc1j0-unsplash.jpg",
 			heroBannerContentHtml: "JEDER BRAUCHT<br>EIN ZUHAUSE",
 			contentPage: "pages/wohnungslosigkeit.html"
 		};
+	
 	} else if (page === "verein") {
 		pageSpecifics = {
 			heroBannerBackground: "assets/Bildwelt/PageBilder/Gemini_Generated_Image_cdg9pmcdg9pmcdg9.png",
 			heroBannerContentHtml: "UM UNBÜROKRATISCH UND<br>UNKOMPLIZIERT HELFEN ZU KÖNNEN",
 			contentPage: "pages/verein.html"
 		};
+	
 	} else if (page === "spenden") {
-		// @TODO
+		pageSpecifics = {
+			heroBannerBackground: "assets/Bildwelt/PageBilder/gemini_l.png",
+			heroBannerContentHtml: "HILFE,<br>DIE ANKOMMT",
+			contentPage: "pages/spenden.html"
+		};
 
 	} else if (page === "faq") {
 		pageSpecifics = {
