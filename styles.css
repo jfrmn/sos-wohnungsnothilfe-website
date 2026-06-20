@@ -191,33 +191,55 @@
 
 .footer-buttons {
 	display: flex;
-	margin-top: 48px;
 	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 48px auto 0;
 	gap: 36px;
+
+	--padding-without-border: 8px 36px 10px;
+	--padding-with-border: 6px 34px 8px;
+	--border: 2px solid;
+	--no-border: none;
 }
 
-.footer-buttons button {
-	height: 48px;
+.footer-buttons a {
+	height: 30px;
 	border-radius: 16px;
-	padding-top: 8px;
-	padding-bottom: 10px;
-	padding-left: 36px;
-	padding-right: 36px;
-
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 25px;
+	text-decoration: none;
 }
 
-/* @TODO: check if the colors are correct */
-.footer-buttons button:hover {
-  filter: brightness(90%); 
+.footer-button-donate {
+	border: var(--no-border);
+	padding: var(--padding-without-border);
+	background-color: #F29F28;
+	color: #ffffff;
 }
 
-.footer-nav-list {
+.footer-button-donate:hover {
+	border: var(--border);
+	padding: var(--padding-with-border);
+	background-color: #ffffff;
+	color: #F29F28;
+}
+
+.footer-button-contact {
+	border: var(--border);
+	padding: var(--padding-with-border);
+	background-color: #ffffff;
+	color: #22A9AB;
+}
+
+.footer-button-contact:hover {
+	border: var(--no-border);
+	padding: var(--padding-without-border);
+	background-color: #22A9AB;
+	color: #ffffff;
+}
+
+.footer-legals {
 	margin-top: 36px;
 	margin-bottom: 36px;
 	padding: 0;
@@ -235,7 +257,7 @@
 	color: #666666;
 }
 
-.footer-nav-list a {
+.footer-legals a {
 	text-decoration: none;
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
 	font-weight: 400;
