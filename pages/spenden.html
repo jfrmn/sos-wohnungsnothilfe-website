@@ -1,10 +1,15 @@
 <style>
 	.donation-grid {
-		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
+		display: flex;
 		gap: 24px;
 		margin-bottom: 24px;
 		padding: 36px;
+	}
+
+	@media (max-width: 600px) {
+		.donation-grid {
+			flex-direction: column;
+		}
 	}
 
 	.donation-grid-item img {
@@ -30,19 +35,19 @@
 <h3>So können Sie immer helfen:</h3>
 <div class="donation-grid">
 	<div class="donation-grid-item">
-		<img src="assets/Icons/money.svg" alt="Geldspende Icon" />
+		<img src="assets/icons/money.svg" alt="Geldspende Icon" />
 		<p>Sie können <span class="paragraph-highlight">Geld</span> für Lebensmittel, Hygieneartikel oder Projekte spenden.</p>
 	</div>
 	<div class="donation-grid-item">
-		<img src="assets/Icons/hygiene.svg" alt="Hygieneartikel Icon" />
+		<img src="assets/icons/hygiene.svg" alt="Hygieneartikel Icon" />
 		<p>Stellen Sie gern auch <span class="paragraph-highlight">Lebensmittel oder Hygieneartikel</span> direkt zur Verfügung (auch kleine Mengen).</p>
 	</div>
 	<div class="donation-grid-item">
-		<img src="assets/Icons/socks.svg" alt="Sachspende Icon" />
+		<img src="assets/icons/socks.svg" alt="Sachspende Icon" />
 		<p>In begrenztem Unfang wird <span class="paragraph-highlight">gut erhaltene Kleidung für Männer</span> (insbesondere Unterwäsche und Socken) gebraucht.</p>
 	</div>
 	<div class="donation-grid-item">
-		<img src="assets/Icons/heart.svg" alt="Ehrenamt Icon" />
+		<img src="assets/icons/heart.svg" alt="Ehrenamt Icon" />
 		<p>Kontaktieren Sie uns gern, wenn Sie sich <span class="paragraph-highlight">ehrenamtlich engangieren</span> möchten.</p>
 	</div>
 </div>

@@ -9,42 +9,42 @@ async function setupSite() {
 	let pageSpecifics = {};
 	if (page === "home" || page === null) {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/PageBilder/Homepage_Hausschlüssel.png",
+			heroBannerBackground: "assets/banner/home-hero-banner.png",
 			heroBannerContentHtml: "GEMEINSAM FÜR<br>NEUE PERSPEKTIVEN",
 			contentPage: "pages/home.html"
 		};
 	
 	} else if (page === "wohnungslosigkeit") {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/PageBilder/dimi-katsavaris-N3m2hKNc1j0-unsplash.jpg",
+			heroBannerBackground: "assets/banner/wohnungslosigkeit-hero-banner.jpg",
 			heroBannerContentHtml: "JEDER BRAUCHT<br>EIN ZUHAUSE",
 			contentPage: "pages/wohnungslosigkeit.html"
 		};
 	
 	} else if (page === "verein") {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/PageBilder/Gemini_Generated_Image_cdg9pmcdg9pmcdg9.png",
+			heroBannerBackground: "assets/banner/verein-hero-banner.png",
 			heroBannerContentHtml: "UM UNBÜROKRATISCH UND<br>UNKOMPLIZIERT HELFEN ZU KÖNNEN",
 			contentPage: "pages/verein.html"
 		};
 	
 	} else if (page === "spenden") {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/PageBilder/gemini_l.png",
+			heroBannerBackground: "assets/banner/spenden-hero-banner.png",
 			heroBannerContentHtml: "HILFE,<br>DIE ANKOMMT",
 			contentPage: "pages/spenden.html"
 		};
 
 	} else if (page === "faq") {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/Sonstiges/Foto%20Moin.jpg",
+			heroBannerBackground: "assets/banner/faq-hero-banner.jpg",
 			heroBannerContentHtml: "JEDE FRAGE IST EIN<br>SCHRITT RICHTING HILFE",
 			contentPage: "pages/faq.html"
 		};
 	
 	} else if (page === "kontakt") {
 		pageSpecifics = {
-			heroBannerBackground: "assets/Bildwelt/PageBilder/Gemini_Generated_Image_n0ohyan0ohyan0oh.png",
+			heroBannerBackground: "assets/banner/kontakt-hero-banner.png",
 			heroBannerContentHtml: "HILFE,<br>DIE ANKOMMT",
 			contentPage: "pages/kontakt.html"
 		};

@@ -23,7 +23,7 @@ template.innerHTML = `
 	</style>
 
 	<div class="highlight-link">
-		<img src="assets/Icons/link.svg" alt="Link Icon" />
+		<img src="assets/icons/link.svg" alt="Link Icon" />
 		<a href="#">
 			<slot></slot>
 		</a>
