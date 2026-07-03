@@ -35,9 +35,11 @@
 		padding-top: 48px;
 		justify-content: flex-start;
 		gap: 48px;
+		flex-wrap: nowrap;
 
 		visibility: hidden;
 		opacity: 0;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.main-nav-button {
