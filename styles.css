@@ -1,7 +1,16 @@
- body {
-	background-color: #ffffff;
+body {
+	background-color: #f4f4f4;
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	display: flex;
+	justify-content: center;
 	margin: 0;
+}
+
+.page-container {
+	width: 100%;
+	max-width: 1728px;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 /******************************************************************************
@@ -36,7 +45,7 @@
 	display: inline-block;
 	color: #000000;
 	text-decoration: none;
-	font-weight: semi-bold;
+	font-weight: 600; /*semi-bold*/
 	font-size: 20px;
 }
 
@@ -45,7 +54,7 @@
 	background-color: #B6B8BA;
 }
 
-.main-nav-hamburger {
+.main-nav-button{
 	display: none;
 	visibility: hidden;
 }
@@ -139,31 +148,30 @@
 
 .content {
 	width: min(1200px, 90%);
-	margin-left: auto;
-	margin-right: auto;
+	margin: 24px auto 104px auto;
 }
 
 .content p {
-	margin-bottom: 24px;
 	margin-top: 0;
+	margin-bottom: 24px;
 
 	font-weight: 400;
 	font-style: normal;
 	font-size: 18px;
-	line-height: 100%;
 }
 
 .content h1 {
 	font-weight: 700;
-	font-size: 64px;
-	font-variant: all-small-caps;
-	margin-top: 24px;
+	font-size: 32px;
+
+	margin-top: 0px;
 	margin-bottom: 24px;
 }
 
 .content h2 {
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 25px;
+
 	margin-top: 0px;
 	margin-bottom: 24px;
 }
@@ -171,9 +179,10 @@
 .content h3 {
 	font-weight: 400;
 	font-size: 25px;
+	font-variant: all-small-caps;
+
 	margin-top: 0px;
 	margin-bottom: 24px;
-	font-variant: all-small-caps;
 }
 
 .paragraph-highlight {
@@ -186,7 +195,6 @@
 
 .site-footer {
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-	margin-top: 80px;
 	border-top: 6px solid #A5DAEC;
 }
 
@@ -265,39 +273,3 @@
 	font-size: 18px;
 	color: #666666;
 }
-
-/* @media (max-width: 40rem) {
-	.site-header {
-		padding: 0.75rem 1rem;
-	}
-
-	.brand img {
-		max-width: 18rem;
-	}
-
-	.main-nav {
-		margin-top: 0.85rem;
-	}
-
-	.main-nav-list {
-		gap: 1rem;
-	}
-
-	.hero-banner {
-		min-height: 13rem;
-		background-position: 60% center;
-	}
-
-	.hero-banner-text {
-		left: 0.8rem;
-		top: 61%;
-		font-size: clamp(0.85rem, 4.4vw, 1.15rem);
-	}
-
-	.hero-banner-bubble {
-		right: 0.75rem;
-		top: 60%;
-		width: clamp(4.7rem, 24vw, 6.2rem);
-		font-size: clamp(0.78rem, 3.6vw, 1rem);
-	}
-} */
