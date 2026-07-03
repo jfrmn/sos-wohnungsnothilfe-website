@@ -71,18 +71,18 @@ async function setupSite() {
 
 function setupMobileNavigation() {
 	const navigation = document.querySelector(".main-nav");
-	const hamburgerButton = document.querySelector(".main-nav-hamburger");
-	const navigationList = document.querySelector(".main-nav-list");
+	const navButton = document.querySelector(".main-nav-button");
+	const navList = document.querySelector(".main-nav-list");
 
-	if (!navigation || !hamburgerButton || !navigationList) {
-		console.error("Navigation elements not found in the DOM.", { navigation, hamburgerButton, navigationList });
+	if (!navigation || !navButton || !navList) {
+		console.error("Navigation elements not found in the DOM.", { navigation, navButton, navList });
 		return;
 	}
 
-	hamburgerButton.addEventListener("click", () => {
+	navButton.addEventListener("click", () => {
 		const isOpen = navigation.classList.toggle("is-open");
-		hamburgerButton.setAttribute("aria-expanded", String(isOpen));
-		hamburgerButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+		navButton.setAttribute("aria-expanded", String(isOpen));
+		navButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
 	});
 }
 

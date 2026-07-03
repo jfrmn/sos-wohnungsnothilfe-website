@@ -27,7 +27,7 @@
 		top: 71px;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 0;
 		background-color: #ffffff;
 		z-index: 9999;
 		flex-direction: column;
@@ -40,7 +40,7 @@
 		opacity: 0;
 	}
 
-	.main-nav-hamburger {
+	.main-nav-button {
 		display: block;
 		visibility: visible;
 		margin: auto 24px auto auto;
@@ -59,13 +59,14 @@
 		cursor: pointer;
 	}
 
-	.main-nav.is-open .main-nav-hamburger {
+	.main-nav.is-open .main-nav-button {
 		background-image: url("assets/Icons/hamburger-close.svg");
 	}
 
 	.main-nav.is-open .main-nav-list {
 		visibility: visible;
 		opacity: 1;
+		height: 100%;
 	}
 
 	/******************************************************************************
@@ -87,8 +88,6 @@
 		font-size: 25px;
 		line-height: 30px; /*spec says 100% but then this looks better? */
 		letter-spacing: 0%;
-		/* width: fit-content;
-		height: 100%; */
 	}
 
 	.hero-banner-content-bubble {
