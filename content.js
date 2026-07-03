@@ -52,7 +52,6 @@ async function setupSite() {
 
 	const heroBanner = document.querySelector(".hero-banner");
 	heroBanner.style.backgroundImage = `url(${pageSpecifics.heroBannerBackground})`;
-	console.log("Hero Banner Background:", pageSpecifics.heroBannerBackground);
 	
 	const heroBannerContent = document.querySelector(".hero-banner-content-text");
 	heroBannerContent.innerHTML = pageSpecifics.heroBannerContentHtml;
@@ -70,4 +69,24 @@ async function setupSite() {
 	contentContainer.innerHTML = await content.text();
 }
 
-window.addEventListener("DOMContentLoaded", setupSite);
+function setupMobileNavigation() {
+	const navigation = document.querySelector(".main-nav");
+	const hamburgerButton = document.querySelector(".main-nav-hamburger");
+	const navigationList = document.querySelector(".main-nav-list");
+
+	if (!navigation || !hamburgerButton || !navigationList) {
+		console.error("Navigation elements not found in the DOM.", { navigation, hamburgerButton, navigationList });
+		return;
+	}
+
+	hamburgerButton.addEventListener("click", () => {
+		const isOpen = navigation.classList.toggle("is-open");
+		hamburgerButton.setAttribute("aria-expanded", String(isOpen));
+		hamburgerButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+	});
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+	setupMobileNavigation();
+	setupSite();
+});

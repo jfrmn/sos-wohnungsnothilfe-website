@@ -6,6 +6,7 @@
 [ ] highlight current page in navbar
 [ ] use css variables for the different font styles
 [ ] the + in the FAQ sections needs to be bigger
+[ ] fix page title and headline fonts
 
 # Optional:
 [ ] hover animation for bubbles on spenden page

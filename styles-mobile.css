@@ -1,0 +1,107 @@
+
+@media (max-width: 600px) {
+
+	/******************************************************************************
+	 * Main Navigation
+ 	******************************************************************************/
+	.main-nav {
+		display: flex;
+	}
+
+	.main-nav-logo {
+		display: block;
+		width: fit-content;
+		margin: 8px auto 8px 8px;
+	}
+
+	.main-nav-logo img {
+		display: block;
+		width: 200px;
+		height: 55px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.main-nav-list {
+		position: absolute;
+		top: 71px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		z-index: 9999;
+		flex-direction: column;
+		
+		padding-top: 48px;
+		justify-content: flex-start;
+		gap: 48px;
+
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.main-nav-hamburger {
+		display: block;
+		visibility: visible;
+		margin: auto 24px auto auto;
+		padding: 0;
+
+		width: 40px;
+		height: 40px;
+		
+		border: none;
+		background-color: transparent;
+		background-image: url("assets/Icons/hamburger-open.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 28px 28px;
+		
+		cursor: pointer;
+	}
+
+	.main-nav.is-open .main-nav-hamburger {
+		background-image: url("assets/Icons/hamburger-close.svg");
+	}
+
+	.main-nav.is-open .main-nav-list {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/******************************************************************************
+	* Hero Banner
+	******************************************************************************/
+
+	.hero-banner {
+		height: 200px;
+	}
+
+	.hero-banner-content {
+		margin-top: 120px;
+		width: 320px;
+		height: 60px;
+	}
+
+	.hero-banner-content-text {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px; /*spec says 100% but then this looks better? */
+		letter-spacing: 0%;
+		/* width: fit-content;
+		height: 100%; */
+	}
+
+	.hero-banner-content-bubble {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+	}
+
+	/******************************************************************************
+	* Footer
+	******************************************************************************/
+
+	.footer-legals {
+		flex-direction: column;
+	}
+}

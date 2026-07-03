@@ -1,6 +1,7 @@
  body {
 	background-color: #ffffff;
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
+	margin: 0;
 }
 
 /******************************************************************************
@@ -22,14 +23,13 @@
 
 .main-nav-list {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 16px 0;
 	list-style: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 64px;
-	padding-bottom: 16px;
 }
 
 .main-nav-list a {
@@ -45,17 +45,20 @@
 	background-color: #B6B8BA;
 }
 
+.main-nav-hamburger {
+	display: none;
+	visibility: hidden;
+}
+
 /******************************************************************************
  * Hero Banner
  *****************************************************************************/
 
 .hero-banner {
-	position: relative;
 	width: 100%;
 	height: 528px;
 	background-position: center;
 	background-size: cover;
-	/* background-image: url("assets/Bildwelt/PageBilder/Homepage_Hausschlüssel.png"); */
 	overflow: hidden;
 
 	display: flex;
@@ -80,7 +83,6 @@
 .hero-banner-content-text {
 	background-color: #000000;
 	font-weight: 700;
-	font-style: black;
 	font-size: 60px;
 	line-height: 50px;
 	letter-spacing: 0%;
@@ -186,7 +188,6 @@
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
 	margin-top: 80px;
 	border-top: 6px solid #A5DAEC;
-	height: 184px;
 }
 
 .footer-buttons {
@@ -240,9 +241,8 @@
 }
 
 .footer-legals {
-	margin-top: 36px;
-	margin-bottom: 36px;
-	padding: 0;
+	padding: 36px 0;
+	margin: 0;
 	list-style: none;
 	display: flex;
 	justify-content: center;
