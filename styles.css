@@ -91,22 +91,24 @@ body {
 
 .hero-banner-content-text {
 	background-color: #000000;
+	
 	font-weight: 700;
-	font-size: 60px;
-	line-height: 50px;
-	letter-spacing: 0%;
+	font-size: 64px;
 	font-variant: small-caps;
+
+	letter-spacing: 0%;
+	line-height: 50px;
 }
 
 .hero-banner-content-bubble {
 	background-color: #F29F28;
 	color: #ffffff;
+	
 	font-weight: 900;
 	font-style: Black;
 	font-size: 60px;
 	line-height: 45px;
 	letter-spacing: 0%;
-	text-align: center;
 	font-variant: small-caps;
 
 	width: 230px;
@@ -119,7 +121,6 @@ body {
 
 	text-align: center;
 	align-content: center;
-
 	text-decoration: none;
 }
 

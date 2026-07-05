@@ -2,7 +2,7 @@
 	.team-grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 32px;
+		gap: 48px;
 		margin-bottom: 32px;
 	}
 
@@ -14,8 +14,9 @@
 	}
 
 	.team-grid-item-photo {
-		width: auto;
+		width: 276px;
 		height: 350px;
+		object-fit: cover;
 	}
 
 	.team-grid-item-info {
@@ -24,32 +25,30 @@
 		margin-left: 24px;
 	}
 
-	/* @TODO use css variables */
 	.team-grid-item-info h1 {
 		font-weight: 700;
 		font-size: 25px;
-		margin: 0 0 8px 0;
+		margin: 0;
 	}
 
 	.team-grid-item-info h2 {
 		font-weight: 400;
 		font-size: 18px;
-		margin: 0;
+		margin-top: 8px;
 	}
 
 	.team-grid-item-info p {
+		line-height: 100%;
 		margin-bottom: 0;
 		opacity: 0;
 		max-height: 0;
 		overflow: hidden;
-		margin-top: 0px;
-		transition: opacity 400ms ease, max-height 400ms ease, margin-top 400ms ease;
+		transition: opacity 400ms ease, max-height 400ms ease;
 	}
 
 	.team-grid-item:hover .team-grid-item-info p {
 		opacity: 1;
 		max-height: 350px;
-		margin-top: 12px;
 	}
 
 	@media (max-width: 48rem) {
@@ -71,7 +70,7 @@
 	Um unkompliziert und unbürokratisch helfen zu können, hat sich im Jahr 2025 der Verein „SOS Wohnungslosenhilfe e.V." gegründet.
 	Ziel des Vereins ist es, Spenden zu sammeln und wohnungslosen Menschen dabei zu helfen, nach Krisen wieder in ein selbstbestimmtes Leben zu starten, gesellschaftlichen Anschluss zu finden und sich wertvoll und gebraucht zu fühlen. Der Verein ist politisch und religiös unabhängig. Er verfolgt ausschließlich caritative Zwecke.
 </p>
-<h2>Mitglieder</h2>
+<h1>Mitglieder</h1>
 <h3>DAS SIND WIR!</h3>
 <div class="team-grid" aria-label="Mitglieder des Vereins">
 	<div class="team-grid-item">
