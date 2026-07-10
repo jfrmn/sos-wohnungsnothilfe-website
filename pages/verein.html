@@ -13,6 +13,18 @@
 		align-items: flex-end;
 	}
 
+	@media (max-width: 600px) {
+		.team-grid {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+		
+		.team-grid-item {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 	.team-grid-item-photo {
 		width: 276px;
 		height: 350px;
@@ -28,13 +40,15 @@
 	.team-grid-item-info h1 {
 		font-weight: 700;
 		font-size: 25px;
-		margin: 0;
+		margin: 0px;
 	}
-
+	
 	.team-grid-item-info h2 {
 		font-weight: 400;
 		font-size: 18px;
 		margin-top: 8px;
+		margin-bottom: 0px;
+		transition: margin-bottom 400ms ease;
 	}
 
 	.team-grid-item-info p {
@@ -50,11 +64,28 @@
 		opacity: 1;
 		max-height: 350px;
 	}
+	
+	.team-grid-item:hover .team-grid-item-info h2 {
+		margin-bottom: 16px;
+	}
 
-	@media (max-width: 48rem) {
-		.team-grid {
-			grid-template-columns: 1fr;
-			gap: 24px;
+	@media (max-width: 600px) {
+
+		.team-grid-item-photo {
+			margin-bottom: 16px;
+		}
+
+		.team-grid-item-info h2 {
+			transition: none;
+			margin-bottom: 16px;
+		}
+
+		.team-grid-item-info p {
+			opacity: 1;
+			max-height: 350px;
+			transition: none;
+			margin-bottom: 24px;
+			margin-left: 0;
 		}
 	}
 </style>
@@ -65,7 +96,7 @@
 	<br>
 	Wohnungslose Menschen geraten in eine Krise, in der nichts mehr geht: Ohne Wohnung keine Adresse, ohne Adresse kein Arbeitsvertrag, kein Bankkonto, keine Chance auf einen neuen Mietvertrag. Und Geldbörse und Dokumente sind anfällig für Diebstahl und Verlust. Oft ist die einzige Hoffnung der Antrag auf Bürgergeld. Doch man braucht bereits etwas Geld, um überhaupt Leistungen beantragen zu können. Das Sozialamt hilft den Menschen, finanziert jedoch nicht alles.
 </p>
-<img src="assets/images/gruppenbild.jpeg" alt="Gruppenbild des Teams" style="padding-bottom: 24px" />
+<img src="assets/images/gruppenbild.jpeg" alt="Gruppenbild des Teams" style="padding-bottom: 24px; width: 100%; height: auto;" />
 <p>
 	Um unkompliziert und unbürokratisch helfen zu können, hat sich im Jahr 2025 der Verein „SOS Wohnungslosenhilfe e.V." gegründet.
 	Ziel des Vereins ist es, Spenden zu sammeln und wohnungslosen Menschen dabei zu helfen, nach Krisen wieder in ein selbstbestimmtes Leben zu starten, gesellschaftlichen Anschluss zu finden und sich wertvoll und gebraucht zu fühlen. Der Verein ist politisch und religiös unabhängig. Er verfolgt ausschließlich caritative Zwecke.
