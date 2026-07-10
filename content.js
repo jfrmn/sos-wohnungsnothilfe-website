@@ -56,6 +56,11 @@ async function setupSite() {
 	const heroBannerContent = document.querySelector(".hero-banner-content-text");
 	heroBannerContent.innerHTML = pageSpecifics.heroBannerContentHtml;
 
+	const highlightedNavLink = document.querySelector(`.main-nav-list a[href="index.html?page=${page}"]`);
+	if (highlightedNavLink) { // if undefined for "home" page
+		highlightedNavLink.classList.add("active");
+	}
+
 	const contentContainer = document.querySelector(".content");
 	const content = await fetch(pageSpecifics.contentPage);
 	if (!content.ok) {

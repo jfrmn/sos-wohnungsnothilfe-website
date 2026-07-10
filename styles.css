@@ -54,7 +54,12 @@ body {
 	background-color: #B6B8BA;
 }
 
-.main-nav-button{
+.main-nav-list a.active {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.main-nav-button {
 	display: none;
 	visibility: hidden;
 }
