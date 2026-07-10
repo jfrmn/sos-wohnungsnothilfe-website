@@ -1,5 +1,5 @@
 [ ] aria labels
-[ ] mobile view
+[x] mobile view
 [-] change buttons in footer to <a>
 	[ ] hover messes with layout
 [ ] refine 404 page
