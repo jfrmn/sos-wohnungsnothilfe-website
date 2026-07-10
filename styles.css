@@ -274,3 +274,7 @@ body {
 	font-size: 18px;
 	color: #666666;
 }
+
+.footer-legals a:hover {
+	text-decoration: underline;
+}
