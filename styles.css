@@ -1,3 +1,42 @@
+:root {
+	--font-size-page-title: 64px;
+	--font-weight-page-title: 700;
+	--font-variant-page-title: all-small-caps;
+
+	--font-size-donation-badge: 60px;
+	--font-weight-donation-badge: 700;
+	--font-variant-donation-badge: all-small-caps;
+
+	--font-size-heading: 32px;
+	--font-weight-heading: 700;
+	--font-variant-heading: normal;
+	
+	--font-size-subheading: 25px;
+	--font-weight-subheading: 700;
+	--font-variant-subheading: normal;
+
+	--font-size-ac-callout: 25px;
+	--font-weight-ac-callout: 400;
+	--font-variant-ac-callout: all-small-caps;
+
+	--font-size-paragraph: 18px;
+	--font-weight-paragraph: 400;
+	--font-variant-paragraph: normal;
+
+	--font-size-navigation: 20px;
+	--font-weight-navigation: 600; /* semi-bold */
+	--font-variant-navigation: normal;
+
+	--font-size-button: 25px;
+	--font-weight-button: 400;
+	--font-variant-button: normal;
+
+	--primary-color: #22A9AB;
+	--primary-color-light: #A5DAEC;
+	--secondary-color: #F29F28;
+	--gray-color: #666666;
+}
+
 body {
 	background-color: #f4f4f4;
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
@@ -45,8 +84,10 @@ body {
 	display: inline-block;
 	color: #000000;
 	text-decoration: none;
-	font-weight: 600; /*semi-bold*/
-	font-size: 20px;
+	
+	font-weight: var(--font-weight-navigation);
+	font-size: var(--font-size-navigation);
+	font-variant: var(--font-variant-navigation);
 }
 
 .main-nav-list a:hover,
@@ -80,9 +121,9 @@ body {
 }
 
 .hero-banner-content {
-	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-    font-weight: 900;
-    font-size: 60px;
+    font-weight: var(--font-weight-page-title);
+    font-size: var(--font-size-page-title);
+    font-variant: var(--font-variant-page-title);
 
 	width: 1120px;
 	height: 230px;
@@ -96,25 +137,18 @@ body {
 
 .hero-banner-content-text {
 	background-color: #000000;
-	
-	font-weight: 700;
-	font-size: 64px;
-	font-variant: small-caps;
-
 	letter-spacing: 0%;
 	line-height: 50px;
 }
 
 .hero-banner-content-bubble {
-	background-color: #F29F28;
+	background-color: var(--secondary-color);
 	color: #ffffff;
 	
 	font-weight: 900;
-	font-style: Black;
 	font-size: 60px;
 	line-height: 45px;
 	letter-spacing: 0%;
-	font-variant: small-caps;
 
 	width: 230px;
 	height: 100%;
@@ -131,9 +165,8 @@ body {
 
 .hero-banner-content-bubble:hover {
 	box-shadow: 0 0 16px 0 rgba(242, 159, 40, 0.2);
-	transition: box-shadow 0.6s ease;
-	animation: bubble-glow 2.4s ease-in-out infinite;
-	/* box-shadow: 0 0 48px 12px rgba(242, 159, 40, 0.85); */
+	transition: box-shadow 0.4s ease;
+	animation: bubble-glow 1.6s ease-in-out infinite;
 }
 
 @keyframes bubble-glow {
@@ -161,31 +194,33 @@ body {
 	margin-top: 0;
 	margin-bottom: 24px;
 
-	font-weight: 400;
-	font-style: normal;
-	font-size: 18px;
+	font-weight: var(--font-weight-paragraph);
+	font-size: var(--font-size-paragraph);
+	font-variant: var(--font-variant-paragraph);
 }
 
 .content h1 {
-	font-weight: 700;
-	font-size: 32px;
+	font-weight: var(--font-weight-heading);
+	font-size: var(--font-size-heading);
+	font-variant: var(--font-variant-heading);
 
 	margin-top: 0px;
 	margin-bottom: 24px;
 }
 
 .content h2 {
-	font-weight: 700;
-	font-size: 25px;
+	font-weight: var(--font-weight-subheading);
+	font-size: var(--font-size-subheading);
+	font-variant: var(--font-variant-subheading);
 
 	margin-top: 0px;
 	margin-bottom: 24px;
 }
 
 .content h3 {
-	font-weight: 400;
-	font-size: 25px;
-	font-variant: all-small-caps;
+	font-weight: var(--font-weight-ac-callout);
+	font-size: var(--font-size-ac-callout);
+	font-variant: var(--font-variant-ac-callout);
 
 	margin-top: 0px;
 	margin-bottom: 24px;
@@ -201,7 +236,7 @@ body {
 
 .site-footer {
 	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-	border-top: 6px solid #A5DAEC;
+	border-top: 6px solid var(--primary-color-light);
 }
 
 .footer-buttons {
@@ -229,7 +264,7 @@ body {
 .footer-button-donate {
 	border: var(--no-border);
 	padding: var(--padding-without-border);
-	background-color: #F29F28;
+	background-color: var(--secondary-color);
 	color: #ffffff;
 }
 
@@ -237,20 +272,20 @@ body {
 	border: var(--border);
 	padding: var(--padding-with-border);
 	background-color: #ffffff;
-	color: #F29F28;
+	color: var(--secondary-color);
 }
 
 .footer-button-contact {
 	border: var(--border);
 	padding: var(--padding-with-border);
 	background-color: #ffffff;
-	color: #22A9AB;
+	color: var(--primary-color);
 }
 
 .footer-button-contact:hover {
 	border: var(--no-border);
 	padding: var(--padding-without-border);
-	background-color: #22A9AB;
+	background-color: var(--primary-color);
 	color: #ffffff;
 }
 
@@ -264,22 +299,18 @@ body {
 	flex-wrap: wrap;
 	gap: 24px;
 
-	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 18px;
-	color: #666666;
+	font-weight: var(--font-weight-paragraph);
+	font-style: var(--font-style-paragraph);
+	font-size: var(--font-size-paragraph);
+	color: var(--gray-color);
 }
 
 .footer-legals a {
 	text-decoration: none;
-	font-family: "Sofia Sans Condensed", "Arial Narrow", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 18px;
-	color: #666666;
+	color: var(--gray-color);
 }
 
 .footer-legals a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: var(--primary-color);
 }

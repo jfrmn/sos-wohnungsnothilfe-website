@@ -10,7 +10,7 @@ template.innerHTML = `
 
 		.highlight-link a {
 			color: #ffffff;
-			background-color: #22A9AB;
+			background-color: var(--primary-color);
 			font-size: 25px;
 			text-decoration: none;
 			align-self: flex-end;
@@ -18,7 +18,7 @@ template.innerHTML = `
 		}
 
 		.highlight-link a:hover {
-			background-color: #A5DAEC;
+			background-color: var(--primary-color-light);
 		}
 	</style>
 
