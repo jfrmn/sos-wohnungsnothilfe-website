@@ -210,18 +210,18 @@ body {
 }
 
 .content h2 {
-	font-weight: var(--font-weight-subheading);
-	font-size: var(--font-size-subheading);
-	font-variant: var(--font-variant-subheading);
+	font-weight: var(--font-weight-ac-callout);
+	font-size: var(--font-size-ac-callout);
+	font-variant: var(--font-variant-ac-callout);
 
 	margin-top: 0px;
 	margin-bottom: 24px;
 }
 
 .content h3 {
-	font-weight: var(--font-weight-ac-callout);
-	font-size: var(--font-size-ac-callout);
-	font-variant: var(--font-variant-ac-callout);
+	font-weight: var(--font-weight-subheading);
+	font-size: var(--font-size-subheading);
+	font-variant: var(--font-variant-subheading);
 
 	margin-top: 0px;
 	margin-bottom: 24px;
