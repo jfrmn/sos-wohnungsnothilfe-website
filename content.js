@@ -56,6 +56,12 @@ async function setupSite() {
 	const heroBannerContent = document.querySelector(".hero-banner-content-text");
 	heroBannerContent.innerHTML = pageSpecifics.heroBannerContentHtml;
 
+	// set aria-label for hero banner for screen readers, replacing <br> with space
+	heroBanner.setAttribute(
+		"aria-label",
+		pageSpecifics.heroBannerContentHtml.replace(/<br\s*\/?>/gi, " ")
+	);
+
 	const highlightedNavLink = document.querySelector(`.main-nav-list a[href="index.html?page=${page}"]`);
 	if (highlightedNavLink) { // if undefined for "home" page
 		highlightedNavLink.classList.add("active");
