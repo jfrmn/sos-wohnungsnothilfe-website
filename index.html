@@ -18,7 +18,7 @@
 				<img src="assets/logos/main-logo.png" alt="SOS Wohnungslosenhilfe e.V." />
 			</a>
 			<button class="main-nav-button" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav-list"></button>
-			<ul class="main-nav-list">
+			<ul class="main-nav-list" id="main-nav-list"> <!-- we also set the id here so that he aria-controls points to that element -->
 				<li><a href="index.html?page=wohnungslosigkeit">Wohnungslosigkeit</a></li>
 				<li><a href="index.html?page=verein">Verein</a></li>
 				<li><a href="index.html?page=spenden">Spenden</a></li>
@@ -29,7 +29,7 @@
 		<section class="hero-banner" aria-label="Spendenaufruf">
 			<div class="hero-banner-content">
 				<div class="hero-banner-content-text">GEMEINSAM FÜR<br>NEUE PERSPEKTIVEN</div>
-				<a class="hero-banner-content-bubble" href="index.html?page=spenden">DEINE<br>SPENDE<br>ZÄHLT!</a>
+				<a class="hero-banner-content-bubble" href="index.html?page=spenden" aria-label="Deine Spende zählt – jetzt spenden">DEINE<br>SPENDE<br>ZÄHLT!</a>
 			</div>
 		</section>
 		<section class="content">
