@@ -92,7 +92,8 @@ body {
 
 .main-nav-list a:hover,
 .main-nav-list a:focus-visible {
-	background-color: #B6B8BA;
+	background-color: var(--gray-color);
+	color: #ffffff;
 }
 
 .main-nav-list a.active {
