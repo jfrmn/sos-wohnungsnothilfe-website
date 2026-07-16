@@ -39,12 +39,14 @@ class HighlightLink extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return ['href'];
+		return ['href', 'target'];
 	}
 
 	attributeChangedCallback(name, oldValue, newValue) {
 		if (name === 'href') {
 			this.linkElement.setAttribute('href', newValue);
+		} else if (name === 'target') {
+			this.linkElement.setAttribute('target', newValue);
 		}
 	}
 }
